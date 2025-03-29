@@ -51,11 +51,6 @@ if st.button("Check Now"):
                 output = result["choices"][0]["message"]["content"]
 
 
-if any(word in output.lower() for word in banned_words):
-    st.warning("⚠️ This response mentioned medication, which is not allowed in this app. Please consult a healthcare provider.")
-else:
-    st.success("Here’s what I found:")
-    st.write(output)
 
                 st.success("Here’s what I found:")
                 st.write(output)
